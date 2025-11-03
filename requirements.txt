@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+pydantic
+langchain
+langchain_community
+langchain-core
+langchain-groq
+groq
+python-dotenv
+
+
+
+
+
+# PS D:\PROJECTS\ChatBot\backend> uvicorn app:app --reload
+# PS D:\PROJECTS\ChatBot\frontend\chatbotui> Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+# PS D:\PROJECTS\ChatBot\frontend\chatbotui> npm run dev
