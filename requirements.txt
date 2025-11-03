@@ -9,6 +9,9 @@ groq
 python-dotenv
 pymongo
 anthropic
+pandas
+requests
+
 
 
 
