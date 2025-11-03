@@ -7,8 +7,8 @@ langchain-core
 langchain-groq
 groq
 python-dotenv
-
-
+pymongo
+anthropic
 
 
 
