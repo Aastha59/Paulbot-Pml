@@ -341,10 +341,10 @@ def load_context(filepath: str, max_chars: int = 3000) -> str:
     try:
         with open(filepath, "r", encoding="utf-8") as f:
             context = f.read()[:max_chars]
-            print("📄 Loaded context (first 200 chars):", context[:200])
+            print("Loaded context (first 200 chars):", context[:200])
             return context
     except Exception as e:
-        print(f"⚠️ Failed to load context: {e}")
+        print(f"Failed to load context: {e}")
         return ""
 
 context_text = load_context(CONTEXT_FILE)
