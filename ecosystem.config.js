@@ -1,6 +1,7 @@
 module.exports = {
   apps : [{
     name   : "app",
-    script : "./app.py"
+    script : "./app.py",
+    watch: true
   }]
 }
