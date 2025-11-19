@@ -15,6 +15,6 @@ requests
 
 
 
-# PS D:\PROJECTS\ChatBot\backend> uvicorn app:app --reload
+# PS D:\PROJECTS\ChatBot\backend> uvicorn app:app --reload &&  uvicorn app:app --host 0.0.0.0 --port 4047
 # PS D:\PROJECTS\ChatBot\frontend\chatbotui> Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 # PS D:\PROJECTS\ChatBot\frontend\chatbotui> npm run dev

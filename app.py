@@ -341,10 +341,10 @@ def load_context(filepath: str, max_chars: int = 3000) -> str:
     try:
         with open(filepath, "r", encoding="utf-8") as f:
             context = f.read()[:max_chars]
-            print("Loaded context (first 200 chars):", context[:200])
+            print("📄 Loaded context (first 200 chars):", context[:200])
             return context
     except Exception as e:
-        print(f"Failed to load context: {e}")
+        print(f"⚠️ Failed to load context: {e}")
         return ""
 
 context_text = load_context(CONTEXT_FILE)
@@ -352,7 +352,8 @@ context_text = load_context(CONTEXT_FILE)
 # === FastAPI Setup ===
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    # allow_origins=["*"],
+    allow_origins=["http://103.171.97.71:4047", "http://localhost:5173", "http://localhost:4047", "http://127.0.0.1:4047"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
